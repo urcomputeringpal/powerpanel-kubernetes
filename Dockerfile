@@ -4,7 +4,6 @@ WORKDIR /tmp
 RUN wget https://dl4jz3rbrsfum.cloudfront.net/software/powerpanel-132-x86_64.tar.gz
 RUN tar xzvf powerpanel-132-x86_64.tar.gz
 
-
 FROM alpine
 WORKDIR /
 COPY --from=build /tmp/powerpanel-1.3.2/bin/* /usr/local/sbin/
