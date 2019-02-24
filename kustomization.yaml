@@ -1,0 +1,20 @@
+generatorOptions:
+  labels:
+    kustomize.base: powerpanel-kubernetes
+
+configMapGenerator:
+- name: pwrstatd
+  files:
+  - pwrstatd.conf
+  - pwrstatd-entrypoint.sh
+  - pwrstatd-powerfail.sh
+  - pwrstatd-lobatt.sh
+
+resources:
+- pwrstatd-daemonset.yaml
+# TODO
+# - pushgateway.yaml
+
+imageTags:
+- name: gcr.io/urcomputeringpal/powerpanel-kubernetes
+  newTag: v0.0.1
