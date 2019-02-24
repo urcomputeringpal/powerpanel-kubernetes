@@ -1,6 +1,6 @@
 # powerpanel-kubernetes
 
-A Docker image and Kustomize base for running [PowerPanel for Linux](https://www.cyberpowersystems.com/product/software/powerpanel-for-linux/). Useful if you have a CyberPower UPS attached to Kubernetes node.
+A Docker image and Kustomize base for running [PowerPanel for Linux](https://www.cyberpowersystems.com/product/software/powerpanel-for-linux/). Useful if you have a CyberPower UPS attached to a Kubernetes node.
 
 # Features
 
